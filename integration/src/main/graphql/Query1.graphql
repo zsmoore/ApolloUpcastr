@@ -1,0 +1,10 @@
+query GetTweet {
+    Tweet(id: 1) {
+        id
+        body
+        Author {
+            first_name
+            last_name
+        }
+    }
+}

@@ -1,0 +1,14 @@
+query GetTweet2($id: ID!) {
+    Tweet(id: $id) {
+        ...basicTweet
+    }
+}
+
+fragment basicTweet on Tweet {
+    id
+    body
+    Author {
+        first_name
+        last_name
+    }
+}
